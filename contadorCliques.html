@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <meta charset="UTF-8">
+    <title class="t">Contador de Cliques da Tigre</title>
+    <link rel="stylesheet" href="css/count.css">
+    <style>
+    </style>
+</head>
+
+<body class="conteudo formulario">
+    <h3>Contador de Cliques</h3>
+    
+    <button onclick="contClique()" class="button tigre">Clique aqui!</button>
+    <table><tr>
+        <td>
+        <h5>Quantidade de cliques:</h5> 
+        </td>
+        <td>
+            <h5><p id="numCliques"></p></h5>
+        </td>
+  </tr></table>
+    <script>
+
+        var numCliques = 0;
+        function contClique() {
+
+            numCliques += 1;
+            document.getElementById("numCliques").innerHTML = numCliques;
+        }
+    </script>
+</body>
+
+</html>
